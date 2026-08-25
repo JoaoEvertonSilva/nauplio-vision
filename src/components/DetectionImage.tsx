@@ -3,9 +3,9 @@ import sampleImg from "@/assets/sample-nauplii.jpg";
 
 type Props = {
   image: string | null;
-  markers?: Marker[];
-  scanning?: boolean;
-  className?: string;
+  markers?: Marker[] | undefined;
+  scanning?: boolean | undefined;
+  className?: string | undefined;
 };
 
 export function DetectionImage({ image, markers, scanning, className }: Props) {
